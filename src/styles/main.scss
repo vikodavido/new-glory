@@ -52,7 +52,7 @@ html {
     }
     
   
-    .header {
+    header {
       position: relative;
       background-color:  #8A2AE3;
       height: 180px;
@@ -86,7 +86,7 @@ html {
     .user-icon {
       width: 38px;
       height: 38px;
-      background-image: url(img/user.png);
+      background-image: url(../img/icons/user.png);
       background-repeat: no-repeat;
       background-size: cover; 
     }
@@ -123,7 +123,7 @@ html {
       width: 20px; 
       height: 20px; 
       border: none; 
-      background: url(img/Shape.png) no-repeat 50% 50%;
+      background: url(../img/icons/Shape.png) no-repeat 50% 50%;
       font-size: 0px;
      }
      /* убираем крестик в search */
@@ -208,7 +208,7 @@ html {
        display: block;
        width: 15px;
        height: 10px;
-       background-image: url(img/Expand_More.png);
+       background-image: url(../img/icons/Expand_More.png);
        background-repeat: no-repeat;
        background-size: auto;
        margin-top: 5px;
@@ -364,12 +364,12 @@ html {
     .likes-icon {
       width: 18px;
       height: 16px;
-      background: url(img/Shape.svg) no-repeat 50% 50%;
+      background: url(../img/icons/Shape.svg) no-repeat 50% 50%;
       background-size: contain;
       margin-right: 5px;
     }
     .added {
-      background-image: url(img/heart.png);
+      background-image: url(../img/icons/heart.png);
     }
     .likes {
       font-weight: 600;
@@ -386,14 +386,14 @@ html {
     .fb {
       width: 9px;
       height: 19px;
-      background: url(img/facebook\ -\ FontAwesome.png) no-repeat 50% 50%;
+      background: url(../img/icons/facebookFontAwesome.png) no-repeat 50% 50%;
       background-size: contain;
       margin-right: 10px;
     }
     .tw {
       width: 17px;
       height: 15px;
-      background: url(img/twitter\ -\ FontAwesome.png) no-repeat 50% 50%;
+      background: url(../img/icons/twitterFontAwesome.png) no-repeat 50% 50%;
       background-size: contain;
     }
     .pagination {
@@ -428,13 +428,13 @@ html {
     .button-arrow-left {
       min-width: 60px;
       height: 60px;
-      background: #8A2AE3 url(img/Shap.png) no-repeat 36px 20px;
+      background: #8A2AE3 url(../img/icons/Shap.png) no-repeat 36px 20px;
       background-position: 50% 50%;
     }
     .button-arrow-right {
       min-width: 60px;
       height: 60px;
-      background: #8A2AE3 url(img/Shap1.png) no-repeat 36px 20px;
+      background: #8A2AE3 url(../img/icons/Shap1.png) no-repeat 36px 20px;
       background-position: 50% 50%;
       margin-right: 0;
     }
@@ -468,27 +468,27 @@ html {
     footer .fb {
       width: 9px;
       height: 19px;
-      background: url(img/facebook\ -\ FontAwesome\ 1.png) no-repeat 50% 50%;
+      background: url(../img/icons/facebookFontAwesome1.png) no-repeat 50% 50%;
       background-size: contain;
       margin-right: 10px;
     }
     footer .tw {
       width: 17px;
       height: 15px;
-      background: url(img/twitter\ -\ FontAwesome\ 1.png) no-repeat 50% 50%;
+      background: url(../img/icons/twitterFontAwesome1.png) no-repeat 50% 50%;
       background-size: contain;
     }
     .in {
       width: 16px;
       height: 16px;
-      background: url(img/Fill\ 1.png) no-repeat 50% 50%;
+      background: url(../img/icons/Fill1.png) no-repeat 50% 50%;
       background-size: contain;
     }
     .logo-zengineers {
       float: left;
       width: 16px;
       height: 17px;
-      background: url(img/Z_logo.png) no-repeat 50% 50%;
+      background: url(../img/icons/Z_logo.png) no-repeat 50% 50%;
       background-size: contain;
       margin-left: 10px;
     }
@@ -505,14 +505,14 @@ html {
   
     @media (min-width: 981px) {
   
-      .header {
+      header {
           position:fixed;
           background-color:  #8A2AE3;
           height: 60px;
           width: 100%;
           top: 0;
         } 
-        .header .container1 {
+        header .container1 {
           padding: 0;
           width:100%;
           max-width: 1300px;
