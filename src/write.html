@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Document</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!-- Start of page code insertion here -->
+      
+      <section class="body-all-height">
+        <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+      <div class="container">
+
+      <section class="content">
+        <div class="wrapp"></div>
+
+           
+
+            <section class="add-glory">
+               <h2>Добавить свидетельство</h2>
+               <div class="form">
+                   <select name="rubric" id="rubric">
+                       <option value="Выберете рубрику">Выберете рубрику</option>
+                   </select>
+                   <input type="text" name="heading" placeholder="Выберете заголовок">
+                   <textarea name="text-glory" rows="10"placeholder="Текст свидетельства"></textarea>
+                   <input type="submit" value="Отправить">
+               </div>
+            </section>
+        </section>
+
+
+            </div> 
+        </section>
+  
+      <!--  -->
+      @@include('templateHtml/footer.html')
+      <!--  -->
+  
+    <!--  -->
+    @@include('templateHtml/scripts.html')
+    <!--  -->
+  </body>
+  </html>

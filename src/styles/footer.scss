@@ -1,0 +1,57 @@
+footer {
+    flex-shrink: 0;
+    background-color: black;
+    width: 100%;
+    padding: 15px;
+  }
+  footer a {
+    color: #747474;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 5px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .social a {
+    margin: 10px;
+  }
+  footer .fb {
+    width: 9px;
+    height: 19px;
+    background: url(../img/icons/facebookFontAwesome1.png) no-repeat 50% 50%;
+    background-size: contain;
+    margin-right: 10px;
+  }
+  footer .tw {
+    width: 17px;
+    height: 15px;
+    background: url(../img/icons/twitterFontAwesome1.png) no-repeat 50% 50%;
+    background-size: contain;
+  }
+  .in {
+    width: 16px;
+    height: 16px;
+    background: url(../img/icons/Fill1.png) no-repeat 50% 50%;
+    background-size: contain;
+  }
+  .logo-zengineers {
+    float: left;
+    width: 16px;
+    height: 17px;
+    background: url(../img/icons/Z_logo.png) no-repeat 50% 50%;
+    background-size: contain;
+    margin-left: 10px;
+  }
+  .zengineers {
+    display: flex;
+    flex-direction: row;
+  }

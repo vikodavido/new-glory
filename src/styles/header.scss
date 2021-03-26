@@ -1,0 +1,100 @@
+header .container1  { 
+    padding: 5px 15px;  
+  }
+.header-top {
+    display: flex;
+    flex-direction: column;
+}
+header {
+  position: relative;
+  background-color:  #8A2AE3;
+  height: 180px;
+  width: 100%;
+  margin: 0 ;
+  padding: 0px;
+}  
+.logo-header {
+  margin-top: 5px;
+}
+.lang-user-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bnt {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+.lang2 {
+  display: flex;
+  flex-direction: column;
+  opacity: 0.3;
+}
+.user-icon {
+  width: 38px;
+  height: 38px;
+  background-image: url(../img/icons/user.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+input[type="search"]::-webkit-input-placeholder { 
+  color: rgb(255, 255, 255); 
+  font-size: 16px;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px 15px;
+  height: 38px;
+  border: 1.5px solid #FFFFFF;
+  border-radius: 30px;
+  background-color: inherit;
+  font-size: 15px;
+  margin: 10px 0;
+ }
+ input[type="search"] {
+  border: none; /* Убираем рамку */
+  outline: none; /* Убираем свечение в Chrome и Safari */
+  -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+  width:75%; /* Ширина поля */
+  background-color:  #8A2AE3;
+  color: white;
+  
+ }
+ input[type="submit"] {
+  width: 20px; 
+  height: 20px; 
+  border: none; 
+  background: url(../img/icons/Shape.png) no-repeat 50% 50%;
+  font-size: 0px;
+ }
+ /* убираем крестик в search */
+ input::-webkit-search-decoration,
+ input::-webkit-search-cancel-button,
+ input::-webkit-search-results-button,
+ input::-webkit-search-results-decoration { display: none; }
+
+ .bnt-act {
+  width: 223px;
+  height: 38px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 6px #7218C6;
+  border-radius: 30px;
+  color: #7218C6;
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+  margin-top: 5px ;
+ }
+ 
