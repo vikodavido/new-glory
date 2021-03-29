@@ -12,6 +12,20 @@
         margin-left:auto;
       } 
   } 
+  
+
+  // Баннеры хедер
+.header-banner {
+  margin-top: 60px;
+  background-size: cover;
+}
+.header-banner-about {
+margin-top: 60px;
+}
+.header-banner-write-nam {
+margin-top: 60px;
+}
+
 
   .add-glory {
      & .form {
@@ -76,11 +90,66 @@
     margin: 0;
 }
 
-.header-banner {
-    margin-top: 60px;
-    background-size: cover;
-}
 
+
+
+
+.write_nam {
+  background-color: white;
+  padding: 30px 15px;
+  margin: 20px 0;
+  & form {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+      max-width: max-content;
+      & label {
+          color: #747474;
+          font-family: 'Proxima Nova Rg', sans-serif;
+          font-size: 14px; 
+          text-align: end;
+          display: flex;
+          flex-direction: row;
+          align-items:baseline;
+          justify-content: space-between;
+          & input[type=text] {
+              
+              margin-left: 20px;
+              margin-top: 10px;
+              width:295px;
+              height: 38px;
+              background: #FFFFFF;
+              border: 1px solid #DFDFDF;
+              box-sizing: border-box;
+              border-radius: 4px;
+          }
+          & textarea[type=text] {
+              margin-left: 20px;
+              margin-top: 10px;
+              width:295px;
+              background: #FFFFFF;
+              border: 1px solid #DFDFDF;
+              box-sizing: border-box;
+              border-radius: 4px;
+          }
+      }
+      & input[type=submit] {
+          margin-left: auto;
+          width: 150px;
+          height: 38px;
+          background:  #8A2AE3;
+          box-sizing: border-box;
+          border-radius: 30px;
+          text-align: center;
+          color: #ffffff;
+          font-weight: 500;
+          font-size: 16px;
+          margin-top: 0;
+        }
+  }
+  
+
+}
 
    .all-menu {
     display: block;

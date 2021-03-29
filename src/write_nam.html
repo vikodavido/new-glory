@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Document</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!-- Start of page code insertion here -->
+      
+      <section class="body-all-height">
+        <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+      <div class="header-banner-write-nam"></div>
+      <div class="container">
+        <section class="content">
+               
+            <div class="write_nam">
+               <h2>Напишите нам</h2>
+               <form action="#" methot="get">
+                   <label for="write-nam">Ваше имя
+                   <input type = "text" name="write-nam"></label>
+                   <label for="e-mail">Ваш e-mail
+                   <input type = "text" name="e-mail"></label>
+                   <label for="my-text">Ваше сообщение
+                   <textarea type = "text" name="my-text" rows ="10"></textarea></label>
+                   <input type="submit" value="Отправить">
+               </form>
+            </div>
+         
+        </section>
+     </div>
+        
+   </div>
+
+</section>
+
+<!--  -->
+@@include('templateHtml/footer.html')
+<!--  -->
+
+<!--  -->
+@@include('templateHtml/scripts.html')
+<!--  -->
+</body>
+</html>

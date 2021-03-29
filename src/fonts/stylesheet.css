@@ -1,4 +1,17 @@
 @font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-BlackItalic.eot');
+    src: url('Roboto-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-BlackItalic.woff2') format('woff2'),
+        url('Roboto-BlackItalic.woff') format('woff'),
+        url('Roboto-BlackItalic.ttf') format('truetype'),
+        url('Roboto-BlackItalic.svg#Roboto-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Proxima Nova Lt';
     src: url('ProximaNova-Semibold.eot');
     src: url('ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
@@ -62,3 +75,4 @@
     font-style: normal;
     font-display: swap;
 }
+

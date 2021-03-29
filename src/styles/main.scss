@@ -11,7 +11,7 @@ body {
     background-color: #F4F4F4;
     margin:0;
     overflow-x:hidden;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova Rg', sans-serif;
     height: 100%;
 }
 *   {
@@ -23,6 +23,65 @@ body {
   background-image: url(../img/header-banner.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
+}
+.header-banner-about {
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/banner_o_nas.jpg);
+    background-repeat: no-repeat;
+    background-position:top;  
+}
+.header-banner-write-nam {
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/banner_write.jpg);
+    background-repeat: no-repeat;
+    background-position:top; 
+}
+.write_nam {
+    background-color: white;
+    padding: 30px 15px;
+    margin: 20px 0;
+    & form {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        & label {
+            color: #747474;
+            font-family: 'Proxima Nova Rg', sans-serif;
+            font-size: 14px; 
+            margin: 10px 0;
+            & input[type=text] {
+                margin: 10px 0;
+                width:100%;
+                height: 38px;
+                background: #FFFFFF;
+                border: 1px solid #DFDFDF;
+                box-sizing: border-box;
+                border-radius: 4px;
+            }
+            & textarea[type=text] {
+                margin: 10px 0;
+                width:100%;
+                background: #FFFFFF;
+                border: 1px solid #DFDFDF;
+                box-sizing: border-box;
+                border-radius: 4px;
+            }
+        }
+        & input[type=submit] {
+            width: 150px;
+            height: 38px;
+            background:  #8A2AE3;
+            box-sizing: border-box;
+            border-radius: 30px;
+            text-align: center;
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 16px;
+            margin-top: 20px;
+          }
+    }
 }
     
 .container-aside { 
@@ -134,6 +193,7 @@ a {
   & .form {
       margin: 0 auto;
       width: 100%;
+      
       & select {
         width: 100%;
         height: 38px;
@@ -144,6 +204,8 @@ a {
         padding:0 10px;
         color: #747474;
         margin-bottom: 20px;
+        font-family: 'Proxima Nova Rg', sans-serif;
+        font-size: 12px;
       }
       & input {
         width: 100%;
@@ -155,6 +217,8 @@ a {
         padding:0 10px;
         color: #747474;
         margin-bottom: 20px;
+        font-family: 'Proxima Nova Rg', sans-serif;
+        font-size: 12px;
       }
       & textarea {
         width: 100%;
@@ -165,6 +229,8 @@ a {
         padding:10px 10px;
         color: #747474;
         margin-bottom: 20px;
+        font-family: 'Proxima Nova Rg', sans-serif;
+        font-size: 12px;
       }
       & input[type=submit] {
         width: 150px;
@@ -176,10 +242,38 @@ a {
         color: #ffffff;
         font-weight: 500;
         font-size: 16px;
+        margin-top: 20px;
       }
-
   }
 }
+
+  /* PROGRESS */
+  
+  .progress {
+    background-color: #e5e9eb;
+    block-size: 0.2em;
+    position: relative;
+    margin: -40px 10px 20px;
+  }
+  
+  .progress__bar {
+    animation-duration: 3s;
+    animation-name: width;
+    background-color:  #8A2AE3;
+    background-size: 10% 0.1em;
+    block-size: 100%;
+    position: relative;
+  }
+  
+  .progress__shadow {
+    block-size: 2em;
+    inline-size: 10%;
+    position: absolute;
+    top: 100%;
+    transform: skew(45deg);
+    transform-origin: 0 0;
+  }
+
    
 .content {
   height: 100%;
@@ -188,6 +282,16 @@ a {
   padding: 0;
   
 } 
+.about {
+    background-color:  white;
+    padding: 30px 15px;
+    font-size: 14px;
+    line-height: 26px;
+    margin: 20px 0;
+    & h2 {
+        font-size: 26px; 
+    }
+}
   
 .all-menu-none {
     display: none;
