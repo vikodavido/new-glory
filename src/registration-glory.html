@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Document</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!-- Start of page code insertion here -->
+      
+      <section class="body-all-height">
+        <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+      <div class="container">
+        <section class="content">
+          <div class="wrapp"></div>
+               
+          <section class="registration">
+            <h2>Регистрация</h2>
+            <div class="form">
+              <input type="text" name="your-name" placeholder="Ваше имя">
+                <input type="text" name="your-e-mail" placeholder="Ваш e-mail">
+                <input type="password" name="password" placeholder="Придумайте пароль">
+            </div>
+                <input type="submit" value="Зарегистрироваться">
+            
+         </section>
+         
+        </section>
+     </div>
+        
+   
+
+</section>
+
+<!--  -->
+@@include('templateHtml/footer.html')
+<!--  -->
+
+<!--  -->
+@@include('templateHtml/scripts.html')
+<!--  -->
+</body>
+</html>

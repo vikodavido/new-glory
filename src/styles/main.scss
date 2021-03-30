@@ -83,7 +83,155 @@ body {
           }
     }
 }
+ .registration {
+     width: 100%;
+     padding: 10px 15px;
+     margin: 20px 0;
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     & h2 {
+         margin: 10px 0;
+     }
+     & .form {
+        & input[type=text] {
+            margin: 10px 0;
+            width:100%;
+            height: 38px;
+            background: #FFFFFF;
+            border: 1px solid #DFDFDF;
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding-left: 15px;
+        } 
+        & input[type=password] {
+            margin: 10px 0;
+            width:100%;
+            height: 38px;
+            background: #FFFFFF;
+            border: 1px solid #DFDFDF;
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding-left: 15px;
+        }
+     }
+     & input[type=submit] {
+        width: 223px;
+        height: 38px;
+        background:  #8A2AE3;
+        box-sizing: border-box;
+        border-radius: 30px;
+        text-align: center;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 16px;
+        margin: 20px 0;
+      }
+ }  
+ 
+ .login-registration {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 20px 0;
+    background-color: white;
+          & h2 {
+            margin: 20px 0;
+               }
+               & .or {
+                     display: flex;
+                     flex-direction: column;  
+                     justify-content: center;
+                        & .form {
+                               display: flex;
+                               flex-direction: column;
+                               align-items:flex-start;
+
+                                 input[type=text],
+                                 input[type=password] {
+                                        margin: 10px 0;
+                                        width:100%;
+                                        height: 38px;
+                                        background: #FFFFFF;
+                                        border: 1px solid #DFDFDF;
+                                        box-sizing: border-box;
+                                        border-radius: 4px;
+                                        padding-left: 15px;
+                                        } 
+                                 
+                                 & label {
+                                       color: #cecece;
+                                       font-size: 12px;
+                                       display: flex;
+                                       flex-direction: row;
+                                       align-items: center;
     
+                                       & input[type=checkbox] {
+                                              appearance: initial;
+                                              width: 20px;
+                                              height: 20px;
+                                              border-radius: 4px;
+                                              color: white;
+                                              background: #8A2AE3 url(../img/icons/checkbox.svg) no-repeat 50% 50%;  
+                                              margin: 10px 0;  
+                                              margin-right: 10px;  
+                                              }
+                                          }
+                                 & input[type=submit] {
+                                         width: 150px;
+                                         height: 38px;
+                                         background:  #8A2AE3;
+                                         box-sizing: border-box;
+                                         border-radius: 30px;
+                                         text-align: center;
+                                         color: #ffffff;
+                                         font-weight: 500;
+                                         font-size: 16px;
+                                         margin: 20px 0;
+                                          }   
+                                 & a {
+                                    color: #919191;
+                                    font-size: 12px; 
+                                    text-decoration: underline;
+                                    margin-left: 50px;
+                                 }         
+                                }
+                                & .vertical-line {
+                                    display: none;
+                                }
+                        & .gor-line {
+                                border-bottom: 1px solid #cccccc;
+                                width: 100%;
+                                margin: 10px 0;
+                            }
+                        & .registration-facebook   {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                           & h4 {
+                            font-size: 12px;
+                            font-weight: normal;
+                            color: #919191;   
+                           }
+                           & .facebook {
+                               margin-top: 20px;
+                               width: 160px;
+                               height: 38px;
+                               border-radius: 4px;
+                               background: #4267B2 url(../img/icons/FB.svg) no-repeat 50% 50%;
+                           }
+                           & a {
+                            color: #8A2AE3;
+                            font-size: 12px; 
+                            text-decoration: underline;
+                            font-weight: bold;
+                            margin: 30px 0; 
+                           }
+                        }  
+                     }  
+}  
 .container-aside { 
     width:100%;
     max-width: 768px;
@@ -113,6 +261,7 @@ a {
   margin-top: -120px;
   padding: 15px;
   background-color:  white;
+  margin-bottom: 15px;
   & .user-information {
     display:flex;
     flex-direction: column;
@@ -145,13 +294,15 @@ a {
     border-radius: 30px;
     width: 100%;
     height: 38px;
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
     color: white;
     font-weight: 600;
     font-size: 15px; 
   }
   & .status {
-    width: 100%;
+      margin: 20px 0;
+      width: 100%;
     & tr {
       font-size: 14px;
     }
@@ -180,6 +331,97 @@ a {
 }
 
 }
+.all-friends {
+    display:flex;
+    flex-direction: column;
+
+}
+.card-user-friend {
+  display: flex;
+  flex-direction: column; 
+  max-width: 100%;
+  height: fit-content;
+  padding: 15px;
+  background-color:  white;
+  margin-bottom: 15px;
+  
+    .user-foto-social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+         .social {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+              & span {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                vertical-align: middle;
+                width: 30px;
+                height: 30px;
+                background-color: black;
+                border-radius: 45px;
+                margin-right: 15px;
+              }
+              & a:last-of-type span {
+                margin-right: 0;
+              }
+          }
+    }
+    .user-information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h4 {
+            font-size: 13px;
+            color: #919191;
+            font-weight: normal;
+            margin: 10px 0;
+        }
+        .name-mail {
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            a {
+                margin-left: 10px;
+            }
+            h2 {
+                font-size: 16px;
+            }
+        }
+        & .status {
+            margin:  0;
+            width: 100%;
+          & tr {
+            font-size: 13px;
+          }
+          & th {
+          text-align: right;
+          padding: 5px 0;
+          padding-left: 10px;
+        }
+          & th:first-of-type {
+            padding-right: 20px;
+          }
+    }
+    .unsubscribe {
+        width: 100%;
+        height: 30px;
+        background-color: #8A2AE3;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 30px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+}
+}
+
 .add-glory {
   margin: 20px 0;
   & h2 {
@@ -279,7 +521,7 @@ a {
   height: 100%;
   width: 100%;
   max-width: 1300px;
-  padding: 0;
+  
   
 } 
 .about {
@@ -412,6 +654,14 @@ a {
     align-items: flex-start;
     background-color: #E8E8E8;
     padding: 15px 15px;
+    & .edit {
+        width: 150px;
+        height: 38px;
+        background-color: #8A2AE3;
+        color: #ffffff;
+        border-radius: 30px;
+        font-size: 14px;
+    }
 }
 .foto-user {
     margin-right: 15px;

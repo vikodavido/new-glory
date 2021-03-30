@@ -42,8 +42,10 @@ margin-top: 60px;
     padding: 0;
     margin:0 auto;
   }
+  .content {
+    padding: 10px;
+  }
   .card-user-page {
-    margin-right: 20px;
     width: 307px;
     & .social {
         margin: 15px 0;
@@ -89,7 +91,50 @@ margin-top: 60px;
   .bnt-act {
     margin: 0;
 }
+.all-friends {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
+.card-user-friend {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15px;
+  width: fit-content;
+  margin: 10px;
+  .user-foto-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px;
+    & .social {
+      margin-top: 15px;
+      margin-bottom: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+  }
+  .user-information {
+     display: flex;
+     flex-direction: column;
+     align-items:flex-start;
+     margin-left: 20px;
+    .name-mail {
+      display: flex;
+      flex-direction: row;
+      align-items:center;
+      a {
+          margin-left: 10px;
+      }
+      h2 {
+          font-size: 16px;
+      }
+  }
+}
+}
+}
 
 
 
@@ -147,9 +192,47 @@ margin-top: 60px;
           margin-top: 0;
         }
   }
-  
-
 }
+
+.registration {
+  width: 655px;
+  margin: 0 auto;
+  margin-top: 20px;
+  & .form {
+    width: 295px;
+  }
+}
+
+.login-registration {
+  width: 655px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  & h2 {
+      margin: 20px 0;
+      text-align: center;
+  }
+  & .or {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  & .gor-line{
+    display: none;
+  }
+  & .vertical-line {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0px 40px;
+    justify-content: space-between;
+    
+}
+& .facebook {
+margin-top: -30px;
+}
+  }
+}  
+
 
    .all-menu {
     display: block;

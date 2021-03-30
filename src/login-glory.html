@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Document</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!-- Start of page code insertion here -->
+      
+      <section class="body-all-height">
+        <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+      <div class="container">
+        <section class="content">
+          <div class="wrapp"></div>
+               
+          <section class="login-registration">
+            <h2>Вход / Регистрация</h2>
+            <div class="or">
+            <div class="form">
+                <input type="text" name="your-e-mail" placeholder="Ваш e-mail">
+                <input type="password" name="password" placeholder="Придумайте пароль">
+                <label>
+                    <input type="checkbox" checked name="memory-password">Запомнить пароль </label>
+                    <div>
+                    <input type="submit" value="Войти">
+                    <a>Забыли пароль?</a></div>
+            </div>
+            <span class="gor-line"></span>
+            <span class="vertical-line">
+                <img src="img/icons/Line-1.svg"> 
+                <img src="img/icons/или.svg">
+                <img src="img/icons/Line.svg"> 
+            </span>
+            <div class="registration-facebook">
+                <h4>Войти как пользователь</h4>
+                <div class="facebook"></div>
+                <a>Зарегистрироваться</a>
+            </div>
+        </div>
+                
+            
+         </section>
+         
+        </section>
+     </div>
+        
+   
+
+</section>
+
+<!--  -->
+@@include('templateHtml/footer.html')
+<!--  -->
+
+<!--  -->
+@@include('templateHtml/scripts.html')
+<!--  -->
+</body>
+</html>
