@@ -12,7 +12,46 @@
         margin-left:auto;
       } 
   } 
-  
+ 
+  .down {
+    position: relative;
+  }
+  .down:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+  }
+.submenu {
+    margin-top: 60px;
+    width: max-content;
+    position: absolute;
+    display: block;
+    margin-left: -90px;
+    visibility: hidden;
+    transition: .4s ease-in-out;
+    list-style: none;
+    padding-inline-start: 0;
+    border-radius: 10px;
+    
+}
+.menu__sub {
+  border-start-end-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 240px;
+  padding: 15px;
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 15px;
+  background-color: #ffffff;
+  border: 1px solid #DFDFDF;
+}
+.submenu li :hover {
+  background-color:  #cac8c8;
+}
 
   // Баннеры хедер
 .header-banner {
@@ -45,6 +84,20 @@ margin-top: 60px;
   .content {
     padding: 10px;
   }
+  .sbar {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    .container-aside {
+      max-width: 307px;
+      margin-top: 20px;
+      margin-right: 0px;
+        .menu-subscriptions {
+    position:initial; 
+    width: 307px;
+        }
+      }
+}  
   .card-user-page {
     width: 307px;
     & .social {
@@ -108,7 +161,8 @@ margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px 20px;
+    margin-left: 10px;
+    margin-right: 20px;
     & .social {
       margin-top: 15px;
       margin-bottom: 5px;
@@ -136,6 +190,80 @@ margin-top: 60px;
 }
 }
 
+.about {
+  background-color:  white;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 26px;
+  margin: 10px 0;
+
+  form {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      width: fit-content;
+      
+      fieldset {
+          display: flex;
+          flex-direction: column;
+          padding-top: 20px;
+          border: none;
+          border-bottom: 1px solid #DFDFDF;
+          padding: 30px 0;
+          margin: 20px 0;
+          width: 100%;
+          legend {
+              font-size: 22px;
+              font-weight:bold;
+              margin-right:  auto;
+              margin-left: 0;
+          }
+      & label {
+          
+            display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           align-items: center;
+          color: #494949;
+          font-family: 'Proxima Nova Rg', sans-serif;
+          font-size: 14px; 
+          margin: 5px 0;
+          & input[type=text],
+          input[type=password],
+          select {
+              margin: 5px 0;
+              margin-left: 15px;
+              width:362px;
+              height: 38px;
+              background: #FFFFFF;
+              border: 1px solid #DFDFDF;
+              box-sizing: border-box;
+              border-radius: 4px;
+              padding-left: 10px;
+              color:#919191;
+          }
+      }
+      & input[type=submit] {
+          width: 150px;
+          height: 38px;
+          background:  #8A2AE3;
+          box-sizing: border-box;
+          border-radius: 30px;
+          text-align: center;
+          color: #ffffff;
+          font-weight: 500;
+          font-size: 16px;
+          margin-left:  auto;
+          margin-right: 0;
+          margin-top: 20px;
+        }
+      }
+      fieldset:last-of-type {
+          border: none;
+      }
+        
+  }
+}
 
 
 

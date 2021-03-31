@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Document</title>
+  <!--  -->
+  @@include('templateHtml/head.html')
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!-- Start of page code insertion here -->
+      
+      <section class="body-all-height">
+        <!--  -->
+      @@include('templateHtml/header.html', { "home": "active" })
+      <!--  -->
+      <div class="header-banner"></div>
+      <div class="container">
+
+    
+      
+
+    
+            
+    <div class="sbar">
+     <!-- карточка user -->
+     <div class="card-user-page">
+    
+        <div class="user-information">
+               <img src="img/81494.png" width="120px" height="120px" style="border-radius: 60px;" class="radius">
+               <h2>Светлана Федоренко</h2>
+               <a class="mail" href="#">@SvetaF</a>
+               <h4>Служитель церкви "Скиния"</h4>
+               <h4 class="location">Киев, Украина</h4>
+         </div>
+         <button class="unsubscribe" type="button">Отписаться</button>
+         <table class="status">
+             <tr>
+                 <td>Свидетельства</td>
+                 <th>123</th>
+             </tr>
+             <tr>
+                <td>Понравившиеся</td>
+                <th>4,234</th>
+            </tr>
+            <tr>
+                <td>Читает</td>
+                <th>18</th>
+            </tr>
+            <tr>
+                <td>Читатели</td>
+                <th>356</th>
+            </tr>
+         </table>
+         <div class="social">
+            <a  href="#"><span><img src="img/icons/twitter-white.svg"></span></a>
+            <a  href="#"><span><img src="img/icons/insta-white.png"></span></a>
+            <a  href="#"><span><img src="img/icons/fasebook-white.svg"></span></a>
+        </div>
+      </div> 
+      <!--  -->
+      @@include('html_snippets/menu.html')
+      <!--  -->
+      <!--  -->
+      </div>    
+      <section class="content">
+        <div class="about">
+           <form action="#" methot="get">
+               <fieldset>
+                <legend>Контактная информация</legend>
+                 <label for="e-mail">Ваш e-mail
+                   <input type = "text" name="e-mail" placeholder="svetlana@gmail.com"></label>
+                 <label for="e-mail">Ваш пароль
+                   <input type = "password" name="password"></label>
+                 <label for="country">Ваша страна
+                   <select name="country">
+                     <option>Украина</option>
+                   </select></label>
+                 <label for="sity">Ваш город
+                   <select name="sity">
+                     <option>Запорожье</option>
+                   </select>
+                 </label>
+             
+            <input type="submit" value="Сохранить">
+        </fieldset>
+        <fieldset>
+            <legend>Личные данные</legend>
+            <label for="FIO">ФИО
+              <input type = "text" name="FIO" placeholder="Светлана Федоренко"></label>
+              <label for="name-user">Имя пользователя
+                <input type = "text" name="name-user" placeholder="@SvetaF"></label>
+                <label for="info">Информация о вас
+                    <input type = "text" name="FIO" placeholder="Член церкви “Новое покление"></label>
+                    <input type="submit" value="Сохранить">
+                </fieldset>
+                <fieldset>
+                    <legend>Социальные сети</legend>
+                    <label for="fb">Facebook
+                      <input type = "text" name="fb" placeholder="https://fb.com/SvetlanaFed"></label>
+                      <label for="in">Instagram
+                        <input type = "text" name="in" placeholder="https://instagram.com/SvetlanaFed"></label>
+                        <label for="tw">Twitter
+                            <input type = "text" name="tw" placeholder="https://twitter.com/SvetlanaFed"></label>
+                            <input type="submit" value="Сохранить">
+                        </fieldset>
+           
+        </form>
+           
+ 
+
+
+   
+
+   
+
+   </div>
+</section>
+</div> 
+</section>
+<!--  -->
+@@include('templateHtml/footer.html')
+<!--  -->
+
+<!--  -->
+@@include('templateHtml/scripts.html')
+<!--  -->
+</body>
+</html>
